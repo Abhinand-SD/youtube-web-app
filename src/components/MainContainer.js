@@ -4,8 +4,7 @@ import VideoContainer from "./VideoContainer";
 
 const MainContainer = () => {
     return (
-        <div className="flex">
-            <Aside />
+        <div className="w-full h-screen">
             <ButtonList />
             <VideoContainer />
         </div>

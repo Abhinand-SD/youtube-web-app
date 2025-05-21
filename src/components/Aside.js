@@ -1,7 +1,11 @@
+import { useSelector } from "react-redux";
 
 const Aside = () => {
+
+    const isToggleMenu = useSelector(store => store.app.isToggleMenu)
+    if(!isToggleMenu) return null
     return (
-        <div className="fixed w-52 h-screen font-roboto text-xs">
+        <div className="col-span-1 w-52 font-roboto text-xs">
             <ul className=" px-7 pb-5 space-y-3 ">
                 <li>Home</li>
                 <li>Shorts</li>
